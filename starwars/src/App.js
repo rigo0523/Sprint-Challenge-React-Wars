@@ -10,8 +10,8 @@ const App = () => {
   // sync up with, if any.
 
   return (
-    <div className="App">
-      <h1 className="Header">Characters</h1>
+    <div className="App" style={{background: 'green'}}>
+      <h1 className="Header">Character1111</h1>
     </div>
   );
 }
