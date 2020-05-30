@@ -4,6 +4,17 @@ import axios from "axios"
 import styled from "styled-components"
 import CharacterCard from "./CharacterCard"
 
+let Container = styled.section`
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 60px auto;
+`;
+
+let Button = styled.button`
+    background: #FFB252;
+`;
 
 
 
@@ -26,12 +37,12 @@ const Character = () => {
     },[])
 
     return (
-        <div className="container">
+        <Container> 
             {character.map(data => { 
                 return <CharacterCard data={data} />
             })}
 
-        </div>
+        </Container>
     )
 }
 

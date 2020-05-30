@@ -1,6 +1,23 @@
 import React from 'react';
 import './App.css';
 import Character from "./components/Character"
+import styled from "styled-components"
+
+let Button = styled.button`
+    background: #F19535;
+    padding: 20px 60px;
+    color: white;
+    margin: 20px;
+    border: none;
+    box-shadow: 5px 2px 10px;
+    cursor: pointer;
+    &:hover {
+      background: black;
+      transition: 1s;
+      transform: scale(1.2);
+    }
+`;
+
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -11,8 +28,8 @@ const App = () => {
   // sync up with, if any.
 
   return (
-    <div className="App" style={{background: 'green'}}>
-      <h1 className="Header">Character1111</h1>
+    <div className="App">
+      <Button>Characters</Button>
       <Character />
     </div>
   );
