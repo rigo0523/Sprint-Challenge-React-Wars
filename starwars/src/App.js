@@ -15,6 +15,8 @@ let Button = styled.button`
       background: black;
       transition: 1s;
       transform: scale(1.2);
+      color: white;
+      background: white;
     }
 `;
 
