@@ -17,6 +17,7 @@ let Button = styled.button`
       transform: scale(1.2);
       color: white;
       background: white;
+      background: red;
     }
 `;
 
